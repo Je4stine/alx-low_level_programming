@@ -1,14 +1,14 @@
-#include "holberton.h"
-
+#include <stdio.h>
+#include "main.h"
 
 /**
- * add - add two ints
- * @a: first int to add
- * @b: second int to add
- * Return: sum of both ints
- **/
-
-int add(int a, int b)
+ * add - adds two numbers
+ * @x: first number to add
+ * @y: second number to add
+ *
+ * Return: return result of adding the numbers
+ */
+int add(int x, int y)
 {
-	return (a + b);
+	return (x + y);
 }

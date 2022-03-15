@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <limits.h>
 #include "main.h"
 
 /**
@@ -7,6 +9,9 @@
  */
 int main(void)
 {
-	print_alphabet_x10();
+	int r;
+
+	r = _abs(-1);
+	printf("%d\n", r);
 	return (0);
 }

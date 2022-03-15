@@ -1,18 +1,18 @@
-#include "holberton.h"
+#include <stdio.h>
+#include "main.h"
 
 /**
- * print_alphabet - prints lower case alphabet
+ * print_alphabet - secondary function
  *
- **/
-
+ * Description: prints each letter of the alphabet, ending with a newline
+ */
 void print_alphabet(void)
 {
+	char abc[] = "abcdefghijklmnopqrstuvwxyz\n";
+	int i;
 
-	char i;
-
-	for (i = 'a'; i <= 'z'; i++)
+	for (i = 0; i < 27; i++)
 	{
-		_putchar(i);
+		_putchar(abc[i]);
 	}
-	_putchar('\n');
 }

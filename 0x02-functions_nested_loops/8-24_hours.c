@@ -1,28 +1,23 @@
-#include "holberton.h"
-
+#include <stdio.h>
+#include "main.h"
 
 /**
- * jack_bauer - prints all minutes of the day
- * @void: first int to add
- *
- **/
-
+ * jack_bauer - IDK who he is and what he has to do with this
+ */
 void jack_bauer(void)
 {
-	int hr;
-	int min;
+	int a, b;
 
-	for (hr = 0; hr < 24; hr++)
+	for (a = 0; a < 24; a++)
 	{
-		for (min = 0; min < 60; min++)
+		for (b = 0; b < 60; b++)
 		{
-			_putchar((hr / 10) + '0');
-			_putchar((hr % 10) + '0');
+			_putchar(a / 10 + '0');
+			_putchar(a % 10 + '0');
 			_putchar(':');
-			_putchar((min / 10) + '0');
-			_putchar((min % 10) + '0');
+			_putchar(b / 10 + '0');
+			_putchar(b % 10 + '0');
 			_putchar('\n');
 		}
-
 	}
 }
