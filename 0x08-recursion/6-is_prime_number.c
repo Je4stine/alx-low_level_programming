@@ -3,6 +3,7 @@
 /**
  * is_prime_number - checks if a number is prime
  * @n: number to check
+ * prime_con - is a function
  * Return: 1 if prime, otherwise 0
  */
 int prime_con(int n, int i)
@@ -20,6 +21,7 @@ int prime_con(int n, int i)
  * is_prime_number - determine if n is a prime
  * @n: number to check
  * Description: determine if n is a prime
+ * prime_con - is a function
  * Return: 1 if prime, 0 if not
  **/
 

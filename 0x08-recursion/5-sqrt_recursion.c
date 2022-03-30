@@ -22,6 +22,7 @@ int sqr_con(int n, int i)
  * _sqrt_recursion - find natural square root of n
  * @n: number to square
  * Description: find square root of n using recursion
+ * sqr_con - return 
  * Return: square root of n or -1 if none
  **/
 
