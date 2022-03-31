@@ -1,35 +1,35 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - return natural square root of a number
- * @n: number to find the square root of
- * sqr_con - return 
- * Return: square root of n
+ * find_root - find square root of number
+ * @test: pointer to number to find the root of
+ * @n: idk
  */
-
-int sqr_con(int n, int i)
+void find_root(int *test, int n)
 {
-	if (n == i * i)
-		return (i);
-
-	else if (n < i * i)
-		return (-1);
-
-	return (sqr_con(n, i + 1));
+	if ((*test) * (*test) == n)
+	{
+		return;
+	}
+	if (*test > n / 2)
+	{
+		*test = -1;
+		return;
+	}
+	++*test;
+	find_root(test, n);
 }
 
 /**
- * _sqrt_recursion - find natural square root of n
- * @n: number to square
- * Description: find square root of n using recursion
- * sqr_con - return 
- * Return: square root of n or -1 if none
- **/
-
+ * _sqrt_recursion - return natural square root of a number
+ * @n: number to find the square root of
+ * Return: square root of n
+ */
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
-		return (-1);
+	int num = 1;
+	int *test = &num;
 
-	return (sqr_con(n, 0));
+	find_root(test, n);
+	return (num);
 }

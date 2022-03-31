@@ -3,32 +3,16 @@
 /**
  * is_prime_number - checks if a number is prime
  * @n: number to check
- * prime_con - is a function
  * Return: 1 if prime, otherwise 0
  */
-int prime_con(int n, int i)
-{
-	if (n % i == 0)
-		return (0);
-
-	else if (n >= (i + 1) * (i * 1))
-		return (prime_con(n, i + 1));
-
-	return (1);
-}
-
-/**
- * is_prime_number - determine if n is a prime
- * @n: number to check
- * Description: determine if n is a prime
- * prime_con - is a function
- * Return: 1 if prime, 0 if not
- **/
-
 int is_prime_number(int n)
 {
-	if (n < 2)
+	if (n <= 1)
 		return (0);
 
-	return (prime_con(n, 2));
+	if (n % 2 == 0 || n % 3 == 0 || n % 5 == 0 || n % 7 == 0 || n % 11 == 0)
+		return (0);
+
+	else
+		return (1);
 }
