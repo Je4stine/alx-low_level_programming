@@ -25,7 +25,6 @@ Write a function that reads a text file and prints it to the POSIX standard outp
 * if `filename` is `NULL` return `0`
 * if `write` fails or does not write the expected amount of bytes, return `0`
 
-**Solution:** [0-read_textfile.c](https://github.com/monoprosito/holbertonschool-low_level_programming/blob/master/0x15-file_io/0-read_textfile.c)
 
 ```
 $ amonkeyprogrammer@ubuntu:~/0x15. File descriptors and permissions$ cat Requiescat 
